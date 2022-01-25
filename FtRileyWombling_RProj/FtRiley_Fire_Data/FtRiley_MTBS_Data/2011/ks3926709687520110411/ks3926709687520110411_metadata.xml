@@ -1,0 +1,88 @@
+<?xml version="1.0" ?> 
+<Supplemental_Fire_Information>
+	<Fire_Info>
+		<fire_ID>MTBS Fire ID: KS3926709687520110411</fire_ID>
+		<fire_name>Fire Name (if known): UNNAMED</fire_name>
+		<fire_date>Date of Fire: April 11, 2011</fire_date>
+		<assessment_type>Type of Assessment:  Initial</assessment_type>
+		<acres>Acres within Fire Perimeter: 3175.6</acres>
+		<dnbr_offset>dNBR offset value used to calculate RdNBR: 5</dnbr_offset>
+	</Fire_Info> 
+	<Image_Spatial_Adjustment_Info>
+		<spatial_adjustment>Required spatial adjustment for co-registration of pre-fire NBR to post-fire NBR</spatial_adjustment> 
+		<x_shift>X-shift adjustment: 0 meters (relative to post-fire NBR)</x_shift>
+		<y_shift>Y-shift adjustment: 0 meters (relative to post-fire NBR)</y_shift>
+	</Image_Spatial_Adjustment_Info>
+	<Landsat_Scene_Info>
+		<path_row>Landsat Path and Row: 28/33</path_row>
+		<pre_scene>Pre-Fire Landsat Date/Scene ID: Landsat 5 TM; March 10, 2011 / 5028033001106910</pre_scene>
+		<post_scene>Post-Fire Landsat Date/Scene ID: Landsat 5 TM; April 11, 2011 / 5028033001110110</post_scene>
+	</Landsat_Scene_Info>
+	<Data_Projection_Info>
+		<projection>Output Dataset Projection: Albers Equal Area</projection>
+		<units>Units: Meters</units>
+		<datum>Datum: NAD83</datum>
+		<spheroid>Spheroid: GRS80</spheroid>
+		<sp1>1st Standard Parallel: 29 30 00</sp1>
+		<sp2>2nd Standard Parallel: 45 30 00</sp2>
+		<central_meridian>Central Meridian: -96 00 00</central_meridian>
+		<lat_of_origin>Latitude of Origin: 23 00 00</lat_of_origin>
+		<false_northing>False Northing: 0</false_northing>
+		<false_easting>False Easting: 0</false_easting>
+	</Data_Projection_Info>
+	<Fire_Subset_Info>
+		<corner_coords_desc>Image Subset Corner Coordinates (center of pixel, projected meters)</corner_coords_desc>
+			<upper_left_x>ULX: -79440</upper_left_x>
+			<upper_left_y>ULY: 1810950</upper_left_y>
+			<lower_left_x>LRX: -69660</lower_left_x>
+			<lower_left_y>LRY: 1800030</lower_left_y>
+		<size>Image subset size </size>
+		<rows>Rows: 365</rows>
+		<cols>Columns: 327</cols>
+		<pix_res>Pixel size: 30 meters </pix_res>
+	</Fire_Subset_Info>
+	<Fire_Subset_Bounding_Box_Info> 
+		<north_lat>North Latitude: 39.29187 (39 17 30.7361303542) </north_lat>
+		<south_lat>South Latitude: 39.24818 (39 14 53.4317452195) </south_lat>
+		<east_long>East Longitude: -96.84964 (-96 50 58.6995575823) </east_long>
+		<west_long>West Longitude: -96.89411 (-96 53 38.7955203371) </west_long>
+	</Fire_Subset_Bounding_Box_Info>
+	<Fire_Centroid_Info>
+		<fire_centroid>Latitude and Longitude within Fire Perimeter </fire_centroid>
+			<lat>Latitude: 39.266899 (39 16 00.836400000008) </lat>
+			<long>Longitude: -96.874565 (-96 52 28.434) </long>
+	</Fire_Centroid_Info>
+	<Fire_Perim_Delineation_Info>
+		<perim_method>Fire Perimeter Generation Method: Manual</perim_method>
+	</Fire_Perim_Delineation_Info>
+	<dNBR_Offset_Info>
+		<offset>dNBR offset value used to calculate RdNBR: 5</offset>
+	</dNBR_Offset_Info>
+	<BS_Thresholds_Info>
+			<no_data_thresh>No Data Threshold:  -970</no_data_thresh>
+			<inc_green_thresh>Increased Greeness:  -150</inc_green_thresh>
+			<low_thresh>Low Threshold:  90</low_thresh>
+			<mod_thresh>Moderate Threshold:  9999</mod_thresh>
+			<high_thresh>High Threshold:  9999</high_thresh>
+	</BS_Thresholds_Info>
+	<Product_List_Info>
+		<products>Product List: </products>
+			<pre_ref>KS3926709687520110411_20110310_L5_refl.tif</pre_ref>
+			<pre_ref_desc>Subset of Landsat scene used for pre-fire image (Bands 1-5, 7; Unsigned 8-bit GeoTIFF)</pre_ref_desc> 
+			<post_ref>KS3926709687520110411_20110411_L5_refl.tif</post_ref>
+			<post_ref_desc> Subset of Landsat scene used for post-fire image (Bands 1-5, 7; Unsigned 8-bit GeoTIFF) </post_ref_desc> 
+			<dnbr>KS3926709687520110411_20110310_20110411_dnbr.tif</dnbr>
+			<dnbr_desc>dNBR used for burn severity analysis and mapping; subset to the fire area (Signed 16-bit GeoTIFF) </dnbr_desc> 
+			<thematic_dnbr>KS3926709687520110411_20110310_20110411_dnbr6.tif</thematic_dnbr>
+			<thematic_dnbr_desc>Thematic dNBR; Derived by thresholding dNBR subset (8-bit GeoTIFF)</thematic_dnbr_desc> 
+			<rdnbr>KS3926709687520110411_20110310_20110411_rdnbr.tif</rdnbr>
+			<rdnbr_desc>Relative dNBR; subset to the fire area (Signed 16-bit GeoTIFF) </rdnbr_desc> 
+			<perim_shapefile>KS3926709687520110411_20110310_20110411_burn_bndy.shp </perim_shapefile>
+			<perim_shapefile_desc>Perimeter of detectable fire area derived from satellite imagery (ESRI shapefile)</perim_shapefile_desc> 
+			<mask_shapefile>KS3926709687520110411_20110310_20110411_mask.shp </mask_shapefile> 
+			<mask_shapefile_desc>Mask for clouds, shadow, snow or anomalies intersecting fire area (ESRI shapefile) </mask_shapefile_desc>
+	</Product_List_Info>
+	<Comments>
+		<processing_comments>Comments regarding processing:   </processing_comments>
+	</Comments>
+</Supplemental_Fire_Information>
